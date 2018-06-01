@@ -1,0 +1,107 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Mist",
+				"abbreviation": "TMoA",
+				"full": "The Mists of Aztlan",
+				"authors": [
+					"Fyggh"
+				],
+				"version": "1.0",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.2.0"
+			}
+		]
+	},
+	"monster": [
+		{
+			"source": "Mist",
+			"name": "Guardian Beast",
+			"size": "H",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": "12",
+			"hp": {
+				"average": 126,
+				"formula": "12d12+48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 18,
+			"int": 3,
+			"wis": 13,
+			"cha": 4,
+			"vulnerable": [
+				"fire"
+			],
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"frightened"
+				"poisoned"
+			],
+			"senses": "darkvision 60 ft.",
+			"passive": 11,
+			"languages": "",
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The oaken bolter is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The oaken bolter has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Greatclub",
+					"entries": [
+						"Melee Weapon Attack: {@hit +3} to hit, reach 10 ft., one target. Hit: 11 ({@dice 2d8+2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"Melee Weapon Attack: {@hit +3} to hit, reach 5 ft., one target. Hit: 7 ({@dice 2d4+2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Howl",
+					"entries": [
+						"Each creature within 60 feet of the guardian beast that can hear it must succeed on a DC 13 Wisdom save or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Explosive Bolt (recharge 5\u20136)",
+					"entries": [
+						"The oaken bolter launches an explosive charge at a point within 100 feet of itself. Every creature within 20 feet of the target point takes 14 ({@dice 4d6}) fire damage plus 14 ({@dice 4d6}) force damage. Both damages are halved with a successful DC 14 Dexterity saving throw."
+					]
+				}
+			],
+			"page": 0,
+			"tokenURL": "https://i.imgur.com/w9nTza9.png",
+			"fluff": {
+				"entries": {
+					"type": "entries",
+					"entries": [
+						"This is no ordinary ballista but a semi-intelligent construct capable of striking at long distances. The bolts it launches can rend flesh, destroy armor, drag enemies toward traps or melee-oriented clockwork."
+					]
+				}
+			},
+			"legendaryGroup": "Example"
+		}
+	]
+}
